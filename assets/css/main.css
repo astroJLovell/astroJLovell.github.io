@@ -2472,7 +2472,7 @@ input, select, textarea {
 		input[type="reset"]:active,
 		input[type="button"]:active,
 		.button:active {
-			background-color: rgba(73, 191, 157, 0.1);
+			background-color: rgba(191, 191, 191, 0.5);
 			border-color: #52527a;
 			color: #52527a !important;
 		}
