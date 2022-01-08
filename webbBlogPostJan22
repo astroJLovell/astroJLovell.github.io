@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Joshua Bennett Lovell: Publications</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<style media="screen">
+		::-moz-selection {
+			background-color: black;
+			color: #d9d9d9;
+		}
+		::selection {
+		background-color: black;
+			color: #d9d9d9;
+		}
+	</style>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="#" class="image avatar"><img src="images/fulls/youHidef.png" alt="" /></a>
+					<h1><strong>JOSHUA BENNETT LOVELL</strong> <br /> Astronomy PhD Candidate<br />
+					Institute of Astronomy, Cambridge, UK<br /></h1>
+				</div>
+			</header> 
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- One -->
+					<section id="one">
+						<header class="major">
+							<h2>James Webb: In search of our Cosmic Origins</h2>
+						</header>
+
+              As I write this, nearly 1 million kilometres away the James Webb Space Telescope ventures into the Solar System as part of humanity’s latest endeavour to understand the origins of the universe.
+
+              Webb is the biggest and most powerful telescope ever put into space. It has been referred to as the long term replacement to the Hubble Space Telescope. However, Webb has a primary mirror nearly 10 times the collecting area of Hubble, and will observe primarily at longer ‘infrared’ wavelengths. In comparison to Hubble, Webb will peer much deeper into the universe, and observe phenomena at different and longer wavelengths.
+
+              By looking at the very first stars and galaxies in the universe, Webb will enable astronomers to explore the physics and chemistry which gave birth to Galaxies like our own Milky Way. By peering at young dust and gas-rich stars in our own Galaxy, Webb will uncover in detail the processes which form planets, asteroids and comets. And by observing exoplanets around other stars, Webb will probe the chemistry and weather of their atmospheres, exploring for ‘biomarkers’; potential signs of biological processes, and thus life.
+
+              For my own science, Webb offers new and unrivaled capabilities. My research seeks to understand how and where asteroid and comet belts form, and how these compare with those present in our own Solar System. Webb is sensitive enough to detect even faint dust and gas signals produced when asteroids collide and icy comets are vaporised. By measuring for dust and gas around young nearby stars, observations with Webb can determine the composition of the youngest asteroid and comet belts, which hold tantalising clues as to how our Solar System may have appeared at its dawn, and how this came to appear as it does today.
+
+              Webb was designed to operate for 10 years. However, given the previous life of various space telescopes, and Webb’s excellent launch trajectory, it too could last much longer than this. This will be important to maximise the amount of science that Webb can conduct, and open up brand new science for generations to come.
+
+              Although work on the mission and telescope design began in the early 1990s, various delays set the mission back by many years. Webb’s launch finally took place on Christmas Day 2021. By the end of this month, Webb should arrive at ‘L2’ (Lagrange Point 2) where it will park, at a distance around four times that of the moon to Earth. To enable it to begin science observations as soon as it arrives, Webb is unfolding into its final configuration as it travels, having now successfully deployed its tennis-court sized sunshield, and locked in place the first of its two primary mirror ‘wings’.
+
+              The first public release of science observations and data will likely be available from the summer. For those of us who remember the moment we first saw such Hubble images as the ‘Ultra-Deep Field’, the ‘Pillars of Creation’, and the great storms in the clouds of Jupiter, the long wait will be worth it.
+
+              Josh Lovell, 08/01/22
+
+              For more information on the mission, including mission progress, plenty is available on the James Webb website: https://www.jwst.nasa.gov/.
+										        
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<a href="index.html"><span style="color: #D3D3D3">HOME</span></a> ||
+					<a href="about.html"><span style="color: #D3D3D3">INTRO</span></a> ||
+					<a href="pubs.html"><span style="color: #D3D3D3">PUBLICATIONS</span></a> ||
+          <a href="press.html"><span style="color: #D3D3D3">PRESS & OUTREACH</span></a> ||
+					<a href="contact.html"><span style="color: #D3D3D3">CONTACT</span></a>
+					<ul class="icons">
+						<li><a href="mailto:joshualovellastro@gmail.com,jl638@cam.ac.uk" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						<li><a href="https://github.com/astroJLovell" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://www.researchgate.net/profile/Joshua-Lovell-2" class="icon brands fa-researchgate"><span class="label">ResearchGate</span></a></li>
+					        <li><a href="https://orcid.org/0000-0002-4248-5443" class="icon brands fa-orcid"><span class="label">OrcID</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; J. B. Lovell 2021</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
+
