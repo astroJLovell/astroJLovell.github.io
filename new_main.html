@@ -160,6 +160,39 @@
             color: #b0b0b0;
         }
 
+        /* Research Images */
+        .research-images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .research-image-container {
+            text-align: center;
+        }
+
+        .research-image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            border: 2px solid #667eea;
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .research-image-container img:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+        }
+
+        .research-image-caption {
+            color: #888;
+            font-size: 0.9rem;
+            margin-top: 0.8rem;
+            font-style: italic;
+        }
+
         /* Students/Advising Section */
         .students-list {
             margin-top: 1.5rem;
@@ -399,7 +432,7 @@
                 font-size: 1.5rem;
             }
 
-            .interests, .highlights {
+            .interests, .highlights, .research-images {
                 grid-template-columns: 1fr;
             }
         }
@@ -456,6 +489,18 @@
                 <div class="interest-card">
                     <h4>🪐 Circumstellar Disks & Planet Formation</h4>
                     <p>Disk evolution, and the role of planets and planetesimals in shaping young planetary systems, from protoplanetary to debris disks.</p>
+                </div>
+            </div>
+
+            <!-- Research Images -->
+            <div class="research-images">
+                <div class="research-image-container">
+                    <img src="/images/Fomalhaut.NRAO.press.png" alt="Fomalhaut debris disk observed with ALMA">
+                    <div class="research-image-caption">Fomalhaut debris disk system (ALMA/NRAO)</div>
+                </div>
+                <div class="research-image-container">
+                    <img src="/images/fulls/noLupgraphic.png" alt="NO Lup protoplanetary disk">
+                    <div class="research-image-caption">NO Lup young planetary system</div>
                 </div>
             </div>
         </section>
