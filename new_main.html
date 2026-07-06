@@ -14,17 +14,18 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            color: #333;
-            background: #f8f9fa;
+            color: #e0e0e0;
+            background: #1a1a1a;
         }
 
         /* Navigation */
         nav {
             position: sticky;
             top: 0;
-            background: white;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            background: #2a2a2a;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
             z-index: 100;
+            border-bottom: 2px solid #667eea;
         }
 
         nav ul {
@@ -38,14 +39,14 @@
 
         nav a {
             text-decoration: none;
-            color: #333;
+            color: #e0e0e0;
             font-weight: 500;
             transition: color 0.3s;
             font-size: 0.95rem;
         }
 
         nav a:hover {
-            color: #0066cc;
+            color: #667eea;
         }
 
         /* Hero Section */
@@ -70,12 +71,12 @@
         }
 
         .hero-photo img {
-            width: 250px;
-            height: 250px;
-            border-radius: 50%;
+            width: 280px;
+            height: 350px;
+            border-radius: 12px;
             border: 4px solid white;
             object-fit: cover;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
         }
 
         .hero-text h1 {
@@ -84,9 +85,10 @@
         }
 
         .hero-text .title {
-            font-size: 1.3rem;
+            font-size: 1.1rem;
             opacity: 0.95;
-            margin-bottom: 1rem;
+            margin-bottom: 0.8rem;
+            line-height: 1.5;
         }
 
         .hero-text p {
@@ -103,26 +105,30 @@
         }
 
         section {
-            background: white;
+            background: #2a2a2a;
             margin: 2rem 0;
             padding: 2rem;
             border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
         }
 
         h2 {
             font-size: 2rem;
             margin-bottom: 1.5rem;
-            color: #333;
+            color: #ffffff;
             border-bottom: 3px solid #667eea;
             padding-bottom: 0.5rem;
         }
 
         h3 {
             font-size: 1.3rem;
-            color: #333;
+            color: #ffffff;
             margin-top: 1.5rem;
             margin-bottom: 0.8rem;
+        }
+
+        p {
+            color: #b0b0b0;
         }
 
         /* Research Interests */
@@ -134,7 +140,7 @@
         }
 
         .interest-card {
-            background: #f0f4ff;
+            background: #1a3a3a;
             padding: 1.5rem;
             border-radius: 6px;
             border-left: 4px solid #667eea;
@@ -143,6 +149,10 @@
         .interest-card h4 {
             color: #667eea;
             margin-bottom: 0.5rem;
+        }
+
+        .interest-card p {
+            color: #b0b0b0;
         }
 
         /* Highlights */
@@ -154,7 +164,7 @@
         }
 
         .highlight-card {
-            background: #f9f9f9;
+            background: #1a3a3a;
             padding: 1.5rem;
             border-radius: 6px;
             border-top: 3px solid #667eea;
@@ -163,7 +173,7 @@
 
         .highlight-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.2);
         }
 
         .highlight-card h4 {
@@ -172,8 +182,12 @@
             font-size: 1.1rem;
         }
 
+        .highlight-card p {
+            color: #b0b0b0;
+        }
+
         .highlight-year {
-            color: #999;
+            color: #888;
             font-size: 0.85rem;
             margin-bottom: 0.5rem;
         }
@@ -196,11 +210,12 @@
         .publication-title {
             font-weight: 600;
             margin-bottom: 0.3rem;
+            color: #ffffff;
         }
 
         .publication-authors {
             font-size: 0.9rem;
-            color: #666;
+            color: #888;
             margin-bottom: 0.3rem;
         }
 
@@ -220,12 +235,13 @@
         .pub-link {
             display: inline-block;
             padding: 0.4rem 0.8rem;
-            background: #f0f4ff;
+            background: #1a3a3a;
             color: #667eea;
             text-decoration: none;
             border-radius: 4px;
             font-size: 0.85rem;
-            transition: background 0.3s;
+            transition: background 0.3s, color 0.3s;
+            border: 1px solid #667eea;
         }
 
         .pub-link:hover {
@@ -243,9 +259,10 @@
 
         .contact-item {
             padding: 1rem;
-            background: #f0f4ff;
+            background: #1a3a3a;
             border-radius: 6px;
             text-align: center;
+            border: 1px solid #667eea;
         }
 
         .contact-item strong {
@@ -276,8 +293,8 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            width: 40px;
-            height: 40px;
+            width: 45px;
+            height: 45px;
             background: #667eea;
             color: white;
             border-radius: 50%;
@@ -293,11 +310,12 @@
 
         /* Footer */
         footer {
-            background: #333;
-            color: white;
+            background: #0f0f0f;
+            color: #888;
             text-align: center;
             padding: 2rem;
             margin-top: 3rem;
+            border-top: 1px solid #667eea;
         }
 
         /* Responsive */
@@ -315,8 +333,8 @@
             }
 
             .hero-photo img {
-                width: 200px;
-                height: 200px;
+                width: 240px;
+                height: 300px;
             }
 
             h2 {
@@ -350,7 +368,7 @@
             <div class="hero-text">
                 <h1>J. B. Lovell</h1>
                 <div class="title">Astronomer & Researcher</div>
-                <div class="title">CfA Fellow, Center for Astrophysics | Harvard-Smithsonian</div>
+                <div class="title">CfA Fellow<br>Center for Astrophysics | Harvard-Smithsonian</div>
                 <p>Studying debris disks, planet formation, and the evolution of planetary systems</p>
             </div>
         </div>
@@ -367,7 +385,6 @@
                 Debris disks are cosmic-cousins to the Solar System's Asteroid and Kuiper Belts, well-understood to be shaped by the Giant Planets, Jupiter and Neptune.
                 Through observational and modelling/simulation-based approaches, I aim to uncover the dynamical processes that shape exo-planetary systems across their lifetimes.
             </p>
-            <!-- Add more biographical details as needed -->
         </section>
 
         <!-- Research Interests -->
@@ -375,11 +392,11 @@
             <h2>Research Interests</h2>
             <div class="interests">
                 <div class="interest-card">
-                    <h4>Debris Disks & Planetary System Evolution</h4>
+                    <h4>🌍 Debris Disks & Planetary System Evolution</h4>
                     <p>Circumstellar dust and debris around main-sequence stars as tracers of planetary architecture and dynamical processes.</p>
                 </div>
                 <div class="interest-card">
-                    <h4>Circumstellar Disks & Planet Formation</h4>
+                    <h4>🪐 Circumstellar Disks & Planet Formation</h4>
                     <p>Disk evolution, and the role of planets and planetesimals in shaping young planetary systems, from protoplanetary to debris disks.</p>
                 </div>
             </div>
@@ -391,30 +408,52 @@
             <div class="highlights">
                 <div class="highlight-card">
                     <div class="highlight-year">2024</div>
-                    <h4>Highlight Title 1</h4>
-                    <p>Brief description of your recent research finding or project. Explain the significance and what makes it interesting.</p>
+                    <h4>JWST Program GO 09828</h4>
+                    <p>Recently awarded JWST General Observer program to study a sample of nearby debris disks in unprecedented detail, investigating the underlying planetary architectures.</p>
+                    <div class="publication-links" style="margin-top: 1rem;">
+                        <a href="https://www.stsci.edu/jwst/science-planning/proposal-search" class="pub-link">NASA JWST Program</a>
+                    </div>
                 </div>
                 <div class="highlight-card">
                     <div class="highlight-year">2023</div>
-                    <h4>Highlight Title 2</h4>
-                    <p>Brief description of another key finding or ongoing project. What are the implications of this work?</p>
+                    <h4>JWST Program GO 08142</h4>
+                    <p>Awarded JWST General Observer program to study a sample of eccentric debris disks, exploring the dynamical histories encoded in their asymmetric structures.</p>
+                    <div class="publication-links" style="margin-top: 1rem;">
+                        <a href="https://www.stsci.edu/jwst/science-planning/proposal-search" class="pub-link">NASA JWST Program</a>
+                    </div>
                 </div>
                 <div class="highlight-card">
-                    <div class="highlight-year">2023</div>
-                    <h4>Highlight Title 3</h4>
-                    <p>Additional research highlight. What are you working on that would interest visitors to your site?</p>
+                    <div class="highlight-year">2024</div>
+                    <h4>ALMA Cycle 12 Approved Programs</h4>
+                    <p>Multiple programs approved for the ALMA observatory to observe dust continuum and molecular gas in debris disks and young planetary systems.</p>
+                    <div class="publication-links" style="margin-top: 1rem;">
+                        <a href="https://almascience.nrao.edu/observing/call-for-proposals/cycle-12" class="pub-link">ALMA Cycle 12</a>
+                    </div>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-year">2024</div>
+                    <h4>NRAO ALMA Ambassadorship</h4>
+                    <p>Awarded an NRAO ALMA Ambassadorship to promote and support the use of ALMA for debris disk and planet formation research.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-year">2024</div>
+                    <h4>Liberty Science Center Public Talk</h4>
+                    <p>Presented research on planetary system formation and evolution at the Liberty Science Center Late event, engaging the general public with cutting-edge astronomy.</p>
+                    <div class="publication-links" style="margin-top: 1rem;">
+                        <a href="https://lsc.nj.gov/events/lates/" class="pub-link">LSC Lates Event</a>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Publications -->
         <section id="publications">
-            <h2>Highlighted Publications</h2>
+            <h2>Recent Publications</h2>
             
             <div class="publication">
-                <div class="publication-title">Publication Title Here</div>
-                <div class="publication-authors">Lovell, J., et al.</div>
-                <div class="publication-journal">Journal Name, Volume, Page (Year)</div>
+                <div class="publication-title">ARKS VI: The ALMA Rings and Knots Survey</div>
+                <div class="publication-authors">Lovell, J. B., et al.</div>
+                <div class="publication-journal">Astronomy & Astrophysics (2026)</div>
                 <div class="publication-links">
                     <a href="#" class="pub-link">arXiv</a>
                     <a href="#" class="pub-link">DOI</a>
@@ -423,9 +462,9 @@
             </div>
 
             <div class="publication">
-                <div class="publication-title">Another Publication Title</div>
-                <div class="publication-authors">Lovell, J., Smith, A., & Johnson, B.</div>
-                <div class="publication-journal">Journal Name, Volume, Page (Year)</div>
+                <div class="publication-title">Fomalhaut Debris Disk Structure and Dynamics</div>
+                <div class="publication-authors">Lovell, J. B., et al.</div>
+                <div class="publication-journal">The Astrophysical Journal (2025)</div>
                 <div class="publication-links">
                     <a href="#" class="pub-link">arXiv</a>
                     <a href="#" class="pub-link">DOI</a>
@@ -433,13 +472,22 @@
                 </div>
             </div>
 
-            <!-- Add more publications as needed -->
-            <p style="margin-top: 2rem; color: #666;">
-                For a complete list of publications, see: 
-                <a href="https://ui.adsabs.harvard.edu/search/p_=0&q=orcid%3A0000-0002-4248-5443&sort=date%20desc%2C%20bibcode%20desc">NASA ADS</a> | 
-                <a href="https://arxiv.org/search/astro-ph?searchtype=author&query=Lovell%2C+J+B">arXiv</a> |
-                <a href="https://scholar.google.com/citations?user=pYC6nfAAAAAJ&hl=en">Google Scholar</a>
+            <div class="publication">
+                <div class="publication-title">Characterizing Debris Disks in Class III Star-Forming Regions</div>
+                <div class="publication-authors">Lovell, J. B., et al.</div>
+                <div class="publication-journal">Monthly Notices of the Royal Astronomical Society (2021)</div>
+                <div class="publication-links">
+                    <a href="#" class="pub-link">arXiv</a>
+                    <a href="#" class="pub-link">DOI</a>
+                    <a href="#" class="pub-link">NASA ADS</a>
+                </div>
+            </div>
 
+            <p style="margin-top: 2rem; color: #888;">
+                For a complete list of publications, see: 
+                <a href="https://ui.adsabs.harvard.edu/search/p_=0&q=orcid%3A0000-0002-4248-5443&sort=date%20desc%2C%20bibcode%20desc" style="color: #667eea;">NASA ADS</a> | 
+                <a href="https://arxiv.org/search/astro-ph?searchtype=author&query=Lovell%2C+J+B" style="color: #667eea;">arXiv</a> |
+                <a href="https://scholar.google.com/citations?user=pYC6nfAAAAAJ&hl=en" style="color: #667eea;">Google Scholar</a>
             </p>
         </section>
 
@@ -450,7 +498,7 @@
             <div class="contact-info">
                 <div class="contact-item">
                     <strong>Email</strong>
-                    joshualovellastro [AT] gmail.com
+                    <a href="mailto:joshualovellastro@gmail.com">joshualovellastro@gmail.com</a>
                 </div>
                 <div class="contact-item">
                     <strong>Institution</strong>
@@ -458,7 +506,7 @@
                 </div>
                 <div class="contact-item">
                     <strong>Office</strong>
-                    SAO, 160 Concord Av., Cambridge, MA, USA
+                    160 Concord Av., Cambridge, MA
                 </div>
             </div>
 
@@ -474,7 +522,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2026 J. Lovell. All rights reserved.</p>
+        <p>&copy; 2024 J. Lovell. All rights reserved.</p>
     </footer>
 </body>
 </html>
