@@ -152,39 +152,42 @@
             position: relative;
         }
 
-        /* Debris Disk Card with Background Image */
+/* Debris Disk Card with Background Image */
         .interest-card.debris-disk-card {
             background-image: url('/images/Fomalhaut.NRAO.press.png');
             background-size: cover;
             background-position: center;
+            background-repeat: no-repeat;
             background-attachment: fixed;
+            min-height: 220px;
         }
 
-.interest-card.debris-disk-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(26, 58, 58, 0.3);  /* Much lighter to see if image loads */
-    border-radius: 6px;
-    z-index: 1;
-}
-        .interest-card.debris-disk-card > * {
-            position: relative;
-            z-index: 2;
+        .interest-card.debris-disk-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(26, 58, 58, 0.50);  /* Lighter overlay */
+            border-radius: 6px;
+            z-index: 1;
         }
 
-        .interest-card h4 {
+        .interest-card.debris-disk-card h4 {
             color: #667eea;
             margin-bottom: 0.5rem;
+            position: relative;
+            z-index: 2;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);  /* Added text shadow for readability */
         }
 
-        .interest-card p {
+        .interest-card.debris-disk-card p {
             color: #b0b0b0;
+            position: relative;
+            z-index: 2;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);  /* Added text shadow for readability */
         }
-
         /* Research Images */
         .research-images {
             display: grid;
