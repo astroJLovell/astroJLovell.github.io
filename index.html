@@ -365,10 +365,12 @@ section {
             margin-bottom: 0.5rem;
         }
 
-        .publication-links {
+.publication-links {
             display: flex;
             gap: 1rem;
             flex-wrap: wrap;
+            position: relative;
+            z-index: 2;
         }
 
         .pub-link {
@@ -381,13 +383,14 @@ section {
             font-size: 0.85rem;
             transition: background 0.3s, color 0.3s;
             border: 1px solid #667eea;
+            position: relative;
+            z-index: 2;
         }
 
         .pub-link:hover {
             background: #667eea;
             color: white;
         }
-
         /* Contact & Links */
         .contact-info {
             display: grid;
