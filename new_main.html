@@ -127,6 +127,11 @@
             margin-bottom: 0.8rem;
         }
 
+        h4 {
+            color: #667eea;
+            font-size: 1.05rem;
+        }
+
         p {
             color: #b0b0b0;
         }
@@ -153,6 +158,59 @@
 
         .interest-card p {
             color: #b0b0b0;
+        }
+
+        /* Students/Advising Section */
+        .students-list {
+            margin-top: 1.5rem;
+        }
+
+        .student-category {
+            margin-bottom: 2rem;
+        }
+
+        .student-category h4 {
+            color: #667eea;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #667eea;
+        }
+
+        .student-item {
+            background: #1a3a3a;
+            padding: 1.2rem;
+            margin-bottom: 1rem;
+            border-radius: 6px;
+            border-left: 3px solid #667eea;
+        }
+
+        .student-item p {
+            margin: 0;
+            color: #b0b0b0;
+            line-height: 1.6;
+        }
+
+        .student-name {
+            color: #ffffff;
+            font-weight: 600;
+            display: block;
+            margin-bottom: 0.3rem;
+        }
+
+        .student-project {
+            color: #a8b8d8;
+            font-style: italic;
+            display: block;
+            margin-top: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        .student-dates {
+            color: #888;
+            font-size: 0.9rem;
+            display: block;
+            margin-top: 0.3rem;
         }
 
         /* Highlights */
@@ -353,6 +411,7 @@
         <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#research">Research</a></li>
+            <li><a href="#students">Students</a></li>
             <li><a href="#highlights">Highlights</a></li>
             <li><a href="#publications">Publications</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -401,6 +460,63 @@
             </div>
         </section>
 
+        <!-- Students & Advising Section -->
+        <section id="students">
+            <h2>Research & Advising</h2>
+            <p>
+                I enjoy advising students in research projects on debris disks, protoplanetary disks, and circumstellar matter in general. Below are current and recent projects:
+            </p>
+
+            <div class="students-list">
+                <!-- Current Students -->
+                <div class="student-category">
+                    <h4>👨‍🎓 Current Students (Primary Supervisor)</h4>
+                    
+                    <div class="student-item">
+                        <span class="student-name">Tristan King</span>
+                        <span class="student-dates">MSci Student, CfA–Southampton University Research Program, 2025–</span>
+                        <span class="student-project">Measuring circumstellar material and winds around massive stars in Westerlund 1</span>
+                    </div>
+
+                    <div class="student-item">
+                        <span class="student-name">Oto Ulrich</span>
+                        <span class="student-dates">MSci Student, CfA/SAO–Trinity College Dublin Research Project, 2025–</span>
+                        <span class="student-project">ALMA modelling of the debris ring around the Sun's nearest disk-bearing neighbour: Epsilon Eridani</span>
+                    </div>
+
+                    <div class="student-item">
+                        <span class="student-name">Chloe Xu</span>
+                        <span class="student-dates">BSc Student, CfA-MIT Undergraduate Research Project, 2025–</span>
+                        <span class="student-project">Developing FLARE: The Feedback Loop for stellar Activity and Radio Emission</span>
+                    </div>
+                </div>
+
+                <!-- Recent Projects -->
+                <div class="student-category">
+                    <h4>📚 Recent Projects (2021–2025)</h4>
+                    
+                    <div class="student-item">
+                        <span class="student-name">Ramisa Rahman</span>
+                        <span class="student-dates">CfA SAO Research Project, 2023–2025</span>
+                        <span class="student-project">RADIOHEAD: The RADIO wavelength Hunt for Exoplanetary systems and Disks</span>
+                        <p style="margin-top: 0.5rem; font-size: 0.9rem;">See also: Rahman & Lovell et al. 2025</p>
+                    </div>
+
+                    <div class="student-item">
+                        <span class="student-name">Three High-School Students</span>
+                        <span class="student-dates">CfA Science Research Mentoring Program, 2023–2024</span>
+                        <span class="student-project">Investigation of an unknown protostar and outflow</span>
+                    </div>
+
+                    <div class="student-item">
+                        <span class="student-name">Niamh Sweeney</span>
+                        <span class="student-dates">IoA (Cambridge, UK) Summer Research Project, 2021</span>
+                        <span class="student-project">Measuring disk dispersal rates in the Taurus-Aurigae star forming region</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Research Highlights -->
         <section id="highlights">
             <h2>Recent Research Highlights</h2>
@@ -425,8 +541,6 @@
                     <div class="highlight-year">2025</div>
                     <h4>ALMA Cycle 12 Approved Programs</h4>
                     <p>Three programs approved for the ALMA observatory to observe dust and molecular gas in debris disks, protoplanetary disks, and other young systems.</p>
-                    <div class="publication-links" style="margin-top: 1rem;">
-                    </div>
                 </div>
                 <div class="highlight-card">
                     <div class="highlight-year">2026</div>
@@ -530,7 +644,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2026 J. Lovell. All rights reserved.</p>
+        <p>&copy; 2024 J. Lovell. All rights reserved.</p>
     </footer>
 </body>
 </html>
