@@ -149,6 +149,32 @@
             padding: 1.5rem;
             border-radius: 6px;
             border-left: 4px solid #667eea;
+            position: relative;
+        }
+
+        /* Debris Disk Card with Background Image */
+        .interest-card.debris-disk-card {
+            background-image: url('/images/Fomalhaut.NRAO.press.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .interest-card.debris-disk-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(26, 58, 58, 0.85);
+            border-radius: 6px;
+            z-index: 1;
+        }
+
+        .interest-card.debris-disk-card > * {
+            position: relative;
+            z-index: 2;
         }
 
         .interest-card h4 {
@@ -435,6 +461,10 @@
             .interests, .highlights, .research-images {
                 grid-template-columns: 1fr;
             }
+
+            .interest-card.debris-disk-card {
+                background-attachment: scroll;
+            }
         }
     </style>
 </head>
@@ -482,7 +512,7 @@
         <section id="research">
             <h2>Research Interests</h2>
             <div class="interests">
-                <div class="interest-card">
+                <div class="interest-card debris-disk-card">
                     <h4>🌍 Debris Disks & Planetary System Evolution</h4>
                     <p>Circumstellar dust and debris around main-sequence stars as tracers of planetary architecture and dynamical processes.</p>
                 </div>
@@ -494,10 +524,6 @@
 
             <!-- Research Images -->
             <div class="research-images">
-                <div class="research-image-container">
-                    <img src="/images/Fomalhaut.NRAO.press.png" alt="Fomalhaut debris disk observed with ALMA">
-                    <div class="research-image-caption">Fomalhaut debris disk system (ALMA/NRAO)</div>
-                </div>
                 <div class="research-image-container">
                     <img src="/images/fulls/noLupgraphic.png" alt="NO Lup protoplanetary disk">
                     <div class="research-image-caption">NO Lup young planetary system</div>
