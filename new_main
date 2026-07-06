@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J. Lovell - Astronomer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+
+        /* Navigation */
+        nav {
+            position: sticky;
+            top: 0;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 1rem;
+            gap: 2rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover {
+            color: #0066cc;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .hero-photo {
+            flex-shrink: 0;
+        }
+
+        .hero-photo img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            border: 4px solid white;
+            object-fit: cover;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+        }
+
+        .hero-text h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero-text .title {
+            font-size: 1.3rem;
+            opacity: 0.95;
+            margin-bottom: 1rem;
+        }
+
+        .hero-text p {
+            font-size: 1rem;
+            opacity: 0.9;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        section {
+            background: white;
+            margin: 2rem 0;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #333;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 0.5rem;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            color: #333;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+        }
+
+        /* Research Interests */
+        .interests {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .interest-card {
+            background: #f0f4ff;
+            padding: 1.5rem;
+            border-radius: 6px;
+            border-left: 4px solid #667eea;
+        }
+
+        .interest-card h4 {
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Highlights */
+        .highlights {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .highlight-card {
+            background: #f9f9f9;
+            padding: 1.5rem;
+            border-radius: 6px;
+            border-top: 3px solid #667eea;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .highlight-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .highlight-card h4 {
+            color: #667eea;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .highlight-year {
+            color: #999;
+            font-size: 0.85rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Publications */
+        .publication {
+            border-left: 3px solid #667eea;
+            padding-left: 1.5rem;
+            margin: 1.5rem 0;
+            padding-bottom: 1.5rem;
+        }
+
+        .publication:last-child {
+            border-left: none;
+            padding-left: 0;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .publication-title {
+            font-weight: 600;
+            margin-bottom: 0.3rem;
+        }
+
+        .publication-authors {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 0.3rem;
+        }
+
+        .publication-journal {
+            font-style: italic;
+            color: #667eea;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .publication-links {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .pub-link {
+            display: inline-block;
+            padding: 0.4rem 0.8rem;
+            background: #f0f4ff;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            transition: background 0.3s;
+        }
+
+        .pub-link:hover {
+            background: #667eea;
+            color: white;
+        }
+
+        /* Contact & Links */
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .contact-item {
+            padding: 1rem;
+            background: #f0f4ff;
+            border-radius: 6px;
+            text-align: center;
+        }
+
+        .contact-item strong {
+            display: block;
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-item a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+        /* Social Links */
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: #667eea;
+            color: white;
+            border-radius: 50%;
+            text-decoration: none;
+            transition: background 0.3s, transform 0.3s;
+            font-size: 1.2rem;
+        }
+
+        .social-links a:hover {
+            background: #764ba2;
+            transform: scale(1.1);
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav ul {
+                gap: 1rem;
+            }
+
+            .hero-content {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-text h1 {
+                font-size: 2rem;
+            }
+
+            .hero-photo img {
+                width: 200px;
+                height: 200px;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .interests, .highlights {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#highlights">Highlights</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-photo">
+                <img src="your-photo.jpg" alt="J. Lovell">
+            </div>
+            <div class="hero-text">
+                <h1>J. Lovell</h1>
+                <div class="title">Astronomer & Researcher</div>
+                <p>Studying debris disks, planet formation, and the evolution of planetary systems</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- About Section -->
+        <section id="about">
+            <h2>About</h2>
+            <p>
+                I am an astronomer interested in understanding how planetary systems form and evolve. 
+                My research focuses on debris disks around nearby stars, which provide evidence of 
+                planet formation processes and planetary system architectures. Through observational 
+                and computational approaches, I aim to uncover the dynamical processes that shape 
+                planetary systems across their lifetimes.
+            </p>
+            <!-- Add more biographical details as needed -->
+        </section>
+
+        <!-- Research Interests -->
+        <section id="research">
+            <h2>Research Interests</h2>
+            <div class="interests">
+                <div class="interest-card">
+                    <h4>🌍 Debris Disks</h4>
+                    <p>Circumstellar dust and debris around main-sequence stars as tracers of planetary architecture and dynamical processes.</p>
+                </div>
+                <div class="interest-card">
+                    <h4>🪐 Planet Formation</h4>
+                    <p>The mechanisms of planet formation, disk evolution, and the role of planetesimals in shaping planetary systems.</p>
+                </div>
+                <div class="interest-card">
+                    <h4>⭐ System Evolution</h4>
+                    <p>Long-term dynamical evolution of planetary systems and their signatures in debris disk structures.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Highlights -->
+        <section id="highlights">
+            <h2>Recent Research Highlights</h2>
+            <div class="highlights">
+                <div class="highlight-card">
+                    <div class="highlight-year">2024</div>
+                    <h4>Highlight Title 1</h4>
+                    <p>Brief description of your recent research finding or project. Explain the significance and what makes it interesting.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-year">2023</div>
+                    <h4>Highlight Title 2</h4>
+                    <p>Brief description of another key finding or ongoing project. What are the implications of this work?</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-year">2023</div>
+                    <h4>Highlight Title 3</h4>
+                    <p>Additional research highlight. What are you working on that would interest visitors to your site?</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications -->
+        <section id="publications">
+            <h2>Recent Publications</h2>
+            
+            <div class="publication">
+                <div class="publication-title">Publication Title Here</div>
+                <div class="publication-authors">Lovell, J., et al.</div>
+                <div class="publication-journal">Journal Name, Volume, Page (Year)</div>
+                <div class="publication-links">
+                    <a href="#" class="pub-link">arXiv</a>
+                    <a href="#" class="pub-link">DOI</a>
+                    <a href="#" class="pub-link">NASA ADS</a>
+                </div>
+            </div>
+
+            <div class="publication">
+                <div class="publication-title">Another Publication Title</div>
+                <div class="publication-authors">Lovell, J., Smith, A., & Johnson, B.</div>
+                <div class="publication-journal">Journal Name, Volume, Page (Year)</div>
+                <div class="publication-links">
+                    <a href="#" class="pub-link">arXiv</a>
+                    <a href="#" class="pub-link">DOI</a>
+                    <a href="#" class="pub-link">NASA ADS</a>
+                </div>
+            </div>
+
+            <!-- Add more publications as needed -->
+            <p style="margin-top: 2rem; color: #666;">
+                For a complete list of publications, see: 
+                <a href="https://ui.adsabs.harvard.edu" target="_blank">NASA ADS</a> | 
+                <a href="https://arxiv.org" target="_blank">arXiv</a>
+            </p>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <strong>Email</strong>
+                    <a href="mailto:your.email@institution.edu">your.email@institution.edu</a>
+                </div>
+                <div class="contact-item">
+                    <strong>Institution</strong>
+                    <a href="#">Your University/Institute</a>
+                </div>
+                <div class="contact-item">
+                    <strong>Office</strong>
+                    Building/Room, City
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 2rem;">
+                <h3>Follow My Research</h3>
+                <div class="social-links">
+                    <a href="#" title="GitHub">🐙</a>
+                    <a href="#" title="Twitter/X">𝕏</a>
+                    <a href="#" title="LinkedIn">💼</a>
+                    <a href="#" title="ORCID">🔗</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 J. Lovell. All rights reserved.</p>
+    </footer>
+</body>
+</html>
