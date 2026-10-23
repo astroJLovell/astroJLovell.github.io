@@ -233,6 +233,16 @@ section {
             box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
         }
 
+        .research-image-container.half {
+            max-width: 50%;
+            margin: 0 auto;   /* keeps it centered */
+        }
+
+@media (max-width: 768px) {
+    .research-image-container.half {
+        max-width: 100%;   /* full width on phones, where 50% would be tiny */
+    }
+}
         .research-image-caption {
             color: #888;
             font-size: 0.9rem;
@@ -557,13 +567,13 @@ section {
             </div>
         </section>
 
-<div class="research-image-container">
+<div class="research-image-container half">
     <video autoplay loop muted playsinline
            style="width:100%; height:auto; border-radius:8px; border:2px solid #667eea;">
         <source src="/images/trapping_neptune_web.webm" type="video/webm">
         <source src="/images/trapping_neptune_web.mp4" type="video/mp4">
     </video>
-    <div class="research-image-caption">The evolution of a dust grain in the presence of a nearby planet: these can trap small dust grains into mean motion resonances, which then produce observable asymmetries in data.</div>
+    <div class="research-image-caption">The evolution of an inwardly drifting dust grain (via PR drag) in the presence of a nearby planet: planets can trap dust grains in mean motion resonances, and produce clumps which then produce observable asymmetries in data.</div>
 </div>
 
         
